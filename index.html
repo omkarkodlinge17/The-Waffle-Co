@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Waffle Co.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h2>The Waffle Co.</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#special">Special</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <p class="tag">Fresh • Crispy • Chocolate Loaded</p>
+    <h1>The Waffle Co.</h1>
+    <h3>थे वफ्फ्ले को.</h3>
+    <p>Experience warm waffles, creamy shakes and dessert happiness in every bite.</p>
+
+    <div class="rating">⭐ 4.2 Rating | 491 Reviews | ₹200–400</div>
+
+    <button onclick="orderNow()">Order Online</button>
+    <button class="outline" onclick="reserveTable()">Reserve Table</button>
+  </div>
+</section>
+
+<section class="info reveal">
+  <div>
+    <h3>🍽 Dine-in</h3>
+    <p>Enjoy fresh waffles at our outlet.</p>
+  </div>
+  <div>
+    <h3>🚗 Drive-through</h3>
+    <p>Quick pickup for your dessert cravings.</p>
+  </div>
+  <div>
+    <h3>📦 Delivery</h3>
+    <p>No-contact delivery available.</p>
+  </div>
+</section>
+
+<section id="special" class="special reveal">
+  <div class="special-img">
+    <img src="images/offer.jpg" alt="Special Offer">
+  </div>
+
+  <div class="special-text">
+    <p class="small-title">Today’s Special</p>
+    <h2>Buy 1 Waffle & Get Shake at Special Price</h2>
+    <p>Freshly baked waffles with premium toppings, chocolate drizzle and creamy shakes.</p>
+    <button onclick="orderNow()">Grab Offer</button>
+  </div>
+</section>
+
+<section id="menu" class="menu reveal">
+  <p class="small-title">Our Menu</p>
+  <h2>Best Selling Items</h2>
+
+  <div class="cards">
+    <div class="card">
+      <img src="images/red-velvet.jpg">
+      <h3>Red Velvet Waffle</h3>
+      <p>Creamy red velvet waffle with premium topping.</p>
+      <span>₹249</span>
+    </div>
+
+    <div class="card">
+      <img src="images/nutella.jpg">
+      <h3>Nutella Waffle</h3>
+      <p>Loaded with rich Nutella chocolate.</p>
+      <span>₹299</span>
+    </div>
+
+    <div class="card">
+      <img src="images/shake.jpg">
+      <h3>Chocolate Shake</h3>
+      <p>Thick, creamy and chilled chocolate shake.</p>
+      <span>₹179</span>
+    </div>
+
+    <div class="card">
+      <img src="images/pancake.jpg">
+      <h3>Mini Pancakes</h3>
+      <p>Soft mini pancakes with syrup and chocolate.</p>
+      <span>₹199</span>
+    </div>
+
+    <div class="card">
+      <img src="images/oreo.jpg">
+      <h3>Oreo Waffle</h3>
+      <p>Crunchy Oreo loaded waffle with cream.</p>
+      <span>₹229</span>
+    </div>
+
+    <div class="card">
+      <img src="images/brownie.jpg">
+      <h3>Brownie Waffle</h3>
+      <p>Chocolate brownie waffle for true dessert lovers.</p>
+      <span>₹279</span>
+    </div>
+  </div>
+</section>
+
+<section class="story reveal">
+  <div>
+    <p class="small-title">About Us</p>
+    <h2>Made for Dessert Lovers</h2>
+    <p>
+      The Waffle Co. brings crispy waffles, premium chocolate toppings,
+      fresh shakes and warm dessert vibes together. Perfect place for friends,
+      couples and late-night cravings.
+    </p>
+  </div>
+  <img src="images/cafe.jpg" alt="Cafe">
+</section>
+
+<section id="gallery" class="gallery reveal">
+  <p class="small-title">Food Gallery</p>
+  <h2>Sweet Moments</h2>
+
+  <div class="gallery-grid">
+    <img src="images/gallery1.jpg">
+    <img src="images/gallery2.jpg">
+    <img src="images/gallery3.jpg">
+    <img src="images/gallery4.jpg">
+  </div>
+</section>
+
+<section id="reviews" class="reviews reveal">
+  <p class="small-title">Reviews</p>
+  <h2>What Customers Say</h2>
+
+  <div class="review-box">
+    <p>“The Nutella waffle exceeded my expectations. Warm, crispy and delicious.”</p>
+    <h4>- Rakesh Nawariya ⭐⭐⭐⭐⭐</h4>
+  </div>
+
+  <div class="review-box">
+    <p>“Good waffles, amazing taste and perfect dessert spot.”</p>
+    <h4>- Customer ⭐⭐⭐⭐</h4>
+  </div>
+
+  <div class="review-box">
+    <p>“Very good place, good staff and excellent service.”</p>
+    <h4>- Customer ⭐⭐⭐⭐⭐</h4>
+  </div>
+</section>
+
+<section class="faq reveal">
+  <p class="small-title">FAQ</p>
+  <h2>Common Questions</h2>
+
+  <div class="faq-item" onclick="toggleFAQ(this)">
+    <h3>Do you provide delivery?</h3>
+    <p>Yes, no-contact delivery is available through online platforms.</p>
+  </div>
+
+  <div class="faq-item" onclick="toggleFAQ(this)">
+    <h3>What is the average cost?</h3>
+    <p>Average cost is around ₹200–400 per person.</p>
+  </div>
+
+  <div class="faq-item" onclick="toggleFAQ(this)">
+    <h3>What is the most popular item?</h3>
+    <p>Nutella Waffle and Red Velvet Waffle are popular choices.</p>
+  </div>
+</section>
+
+<section id="contact" class="contact reveal">
+  <h2>Visit Us</h2>
+  <p><b>Address:</b> E-10, Jail Rd, opposite Standard Burfee, Gurunanak Pura, Tilak Nagar, New Delhi 110058</p>
+  <p><b>Phone:</b> 011 4141 6844</p>
+  <p><b>Timing:</b> Open · Closes 12 AM</p>
+  <a href="https://www.google.com/maps" target="_blank">Get Directions</a>
+</section>
+
+<footer>
+  <p>© 2026 The Waffle Co. | Designed by Omkar</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
